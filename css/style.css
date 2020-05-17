@@ -59,6 +59,8 @@ a{
     color: white;
     border: 1px solid transparent;
     border-radius: .25em;
+    font-size: 1.08em;
+    font-family: 'Lora',serif;
 }
 .btn-big{
     padding: .7rem 1.3rem;
@@ -365,6 +367,30 @@ header .menu-toggle{
 
 /* End Content */
 
+
+/* AUTH PAGES */
+
+.auth-content{
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.auth-content .form-title{
+    text-align: center;
+}
+
+.auth-content form div{
+    margin-bottom: 10px;
+}
+.auth-content form label{
+    padding-bottom: 20px;
+}
+
+
+
 /* Footer */
 
 .footer{
@@ -472,7 +498,12 @@ header .menu-toggle{
         width: 90%;
         height: auto;
       } */
-   
+      
+      .auth-content{
+        margin-top: 30%;
+        width: 100%;
+    }
+
     .fb-page{
         width: auto;
         display: block;
@@ -503,11 +534,24 @@ header .menu-toggle{
         height: auto;
         flex-direction: column;
     }
+    .footer .footer-content .contact-form{
+        padding-bottom: 75px;
+    }
+    .footer .footer-content .contact-form .contact-btn{
+        display: block;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 750px){
     header{
         position: relative;
+    }
+    .main-content-wrapper{
+        padding: 10px;
+    }
+    .content .main-content.single{
+        padding: 10px 20px;
     }
     header ul{
         width: 100%;
@@ -559,4 +603,21 @@ header .menu-toggle{
     }
     
     
+}
+@media only screen and (max-width: 600px){
+    .content .main-content .post{
+        height: auto;
+    }
+    .content .main-content .post .post-image{
+        width: 100%;
+    }
+    .content .main-content .post .post-preview{
+        width: 100%;
+    }
+    .content .main-content .post .read-more{
+        position: static;
+        display: block;
+        width: 100%;
+    }
+
 }

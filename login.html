@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- adding font awesome -->
+    <script src="https://kit.fontawesome.com/8cc5856392.js" crossorigin="anonymous"></script>
+    <!-- .. -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Candal&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <!-- .. -->
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- -- -->
+    <title>Login</title>
+    <script>
+        function validate(){
+            uid = document.getElementById('user');
+            pwd = document.getElementById('pwd');
+            
+            if(uid.value == 'tingtong' && pwd.value == '12ab'){
+                console.log(uid);
+                console.log(pwd);
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Freshy</span>Yours</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Unknown User
+                    <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
+                </a>
+                <ul>
+                    
+                    <li><a href="login.html" class="login">Login</a></li>
+                    <li><a href="register.html" class="register">Sign Up</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+   <div class="auth-content">
+       <form onsubmit="return validate()" action="new.html">
+           <div>
+               <label>Username</label>
+               <input type="text" placeholder="Enter user name" id="user" class="text-input">
+           </div>
+           <div>
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" id="pwd" class="text-input">
+        </div>
+        <button type="submit" class="btn btn-big">Login</button>
+       </form>
+   </div>
+
+
+
+   
+   
+   
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- -- -->
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
